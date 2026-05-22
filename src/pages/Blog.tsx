@@ -246,7 +246,7 @@ const Blog = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="seu@email.com"
                 required
-                className="flex-1 px-4 h-11 bg-background border border-border rounded-lg text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all font-body"
+                className="w-full sm:w-auto sm:flex-1 px-4 h-11 bg-background border border-border rounded-lg text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all font-body"
               />
               <button
                 type="submit"
