@@ -1,0 +1,29 @@
+{
+  "slug": "quase-acidente-o-indicador-que-ninguem-mede",
+  "number": "#03",
+  "date": "Mai 08, 2026",
+  "dateISO": "2026-05-08",
+  "readTime": "5 min",
+  "topic": "Segurança Operacional",
+  "title": "Quase-acidente: o indicador que sua operação não está medindo (e devia)",
+  "subtitle": "TRIR baixo com reporte de quase-acidente zero não é segurança — é cegueira disfarçada de boa performance.",
+  "metaTitle": "Quase-acidente: como medir o leading indicator que importa | Health Safety",
+  "metaDescription": "Por que TRIR sozinho engana e como construir uma métrica de quase-acidente que realmente prevê o próximo acidente.",
+  "keywords": [
+    "quase-acidente",
+    "leading indicator SST",
+    "TRIR",
+    "indicadores de segurança do trabalho"
+  ],
+  "image": null,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Post de exemplo (dummy) para validar a UX da grade do blog. Conteúdo real entrará depois."
+    },
+    {
+      "type": "paragraph",
+      "content": "Esse card é só pra preencher a terceira coluna da grade no desktop e mostrar como ficam três posts lado a lado."
+    }
+  ]
+}
