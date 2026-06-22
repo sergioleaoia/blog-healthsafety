@@ -4,8 +4,6 @@ import {
   ArrowRight,
   X,
   CheckCircle,
-  ShieldCheck,
-  Timer,
   MessageCircle,
   Wine,
   HardHat,
@@ -95,29 +93,44 @@ function PostCover({ post }: { post: (typeof posts)[number] }) {
 
   return (
     <div className="relative aspect-[16/10] overflow-hidden bg-brand-dark">
-      {/* Brand gradient */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, hsl(var(--brand-dark)) 0%, hsl(212 78% 16%) 40%, hsl(211 76% 41%) 100%)",
-        }}
-      />
-      {/* Subtle measurement grid pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.08]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
-      {/* Faded watermark icon */}
-      <Icon
-        className="absolute -right-6 -bottom-6 text-background/[0.10]"
-        size={210}
-        strokeWidth={1.1}
-      />
+      {post.image ? (
+        <>
+          {/* Cover photo */}
+          <img
+            src={post.image}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-dark/30 to-brand-dark/5" />
+        </>
+      ) : (
+        <>
+          {/* Brand gradient */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(135deg, hsl(var(--brand-dark)) 0%, hsl(212 78% 16%) 40%, hsl(211 76% 41%) 100%)",
+            }}
+          />
+          {/* Subtle measurement grid pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+            }}
+          />
+          {/* Faded watermark icon */}
+          <Icon
+            className="absolute -right-6 -bottom-6 text-background/[0.10]"
+            size={210}
+            strokeWidth={1.1}
+          />
+        </>
+      )}
 
       {/* Top bar: number badge */}
       <div className="absolute top-4 left-4 z-10">
@@ -225,7 +238,7 @@ const Blog = () => {
             </h1>
 
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl mx-auto mb-7">
-              Conteúdo prático toda semana para quem responde por vidas na operação.
+              Conteúdo prático para quem responde por vidas na operação.
             </p>
 
             <form
@@ -255,7 +268,7 @@ const Blog = () => {
               >
                 {submitting ? "Enviando..." : (
                   <>
-                    Inscreva-me
+                    Me inscrever
                     <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform" />
                   </>
                 )}
@@ -393,8 +406,7 @@ const Blog = () => {
                 Receba a próxima edição
               </h2>
               <p className="text-sm text-background/60 mb-6 leading-relaxed">
-                Bafômetro, NRs, política antiálcool e gestão de riscos — toda semana, sem
-                enrolação.
+                Bafômetro, NRs, política antiálcool e gestão de riscos.
               </p>
               <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
                 <input
@@ -433,10 +445,10 @@ const Blog = () => {
               </h2>
               <p className="text-sm text-background/60 mb-6 leading-relaxed">
                 Bafômetro com reconhecimento facial, alerta em tempo real e cadeia de
-                custódia auditável. Diagnóstico gratuito de conformidade NR.
+                custódia auditável.
               </p>
               <a
-                href={WHATSAPP_URL}
+                href="https://contatos.healthsafety.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 h-12 px-6 bg-whatsapp hover:bg-whatsapp/90 text-primary-foreground text-sm font-heading font-bold rounded-xl transition-colors shadow-lg shadow-whatsapp/20 w-full sm:w-auto"
@@ -444,16 +456,6 @@ const Blog = () => {
                 <MessageCircle size={18} />
                 Falar no WhatsApp
               </a>
-              <div className="flex items-center gap-5 mt-6 text-[11px] text-background/40">
-                <span className="inline-flex items-center gap-1.5">
-                  <ShieldCheck size={13} className="text-accent/80" />
-                  Sem compromisso
-                </span>
-                <span className="inline-flex items-center gap-1.5">
-                  <Timer size={13} className="text-accent/80" />
-                  Resposta em minutos
-                </span>
-              </div>
             </div>
           </div>
         </div>

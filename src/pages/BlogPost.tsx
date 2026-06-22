@@ -133,6 +133,7 @@ function PostSchema({ post }: { post: BlogPostType }) {
     "@type": "BlogPosting",
     headline: post.metaTitle,
     description: post.metaDescription,
+    image: post.image ? `${SITE_URL}${post.image}` : OG_IMAGE,
     datePublished: post.dateISO,
     dateModified: post.dateISO,
     author: { "@type": "Organization", name: "Health Safety", url: SITE_URL },
@@ -267,6 +268,7 @@ export default function BlogPost() {
   useEffect(() => {
     if (!post) return;
     const postUrl = `${SITE_URL}/${post.slug}`;
+    const ogImage = post.image ? `${SITE_URL}${post.image}` : OG_IMAGE;
     document.title = `${post.metaTitle} | Health Safety Blog`;
 
     const setMeta = (name: string, content: string, attr = "name") => {
@@ -300,7 +302,7 @@ export default function BlogPost() {
     setMeta("og:description", post.metaDescription, "property");
     setMeta("og:type", "article", "property");
     setMeta("og:url", postUrl, "property");
-    setMeta("og:image", OG_IMAGE, "property");
+    setMeta("og:image", ogImage, "property");
     setMeta("og:site_name", "Health Safety Blog", "property");
     setMeta("og:locale", "pt_BR", "property");
     setMeta("article:published_time", post.dateISO, "property");
@@ -311,7 +313,7 @@ export default function BlogPost() {
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", post.metaTitle);
     setMeta("twitter:description", post.metaDescription);
-    setMeta("twitter:image", OG_IMAGE);
+    setMeta("twitter:image", ogImage);
     setLink("canonical", postUrl);
     setLink("alternate", postUrl, { hreflang: "pt-BR" });
     setLink("alternate", postUrl, { hreflang: "x-default" });

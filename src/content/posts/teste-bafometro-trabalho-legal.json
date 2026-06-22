@@ -16,7 +16,7 @@
     "LGPD",
     "justa causa"
   ],
-  "image": null,
+  "image": "/images/step-assopra.jpg",
   "content": [
     {
       "type": "paragraph",
@@ -42,8 +42,8 @@
     },
     {
       "type": "image",
-      "src": "/images/phoebus-hero.jpg",
-      "alt": "Trabalhadora de capacete e colete de segurança faz o teste de etilômetro no Phoebus, instalado na catraca de acesso da operação."
+      "src": "/images/phoebus-device.png",
+      "alt": "Etilômetro Phoebus usado no controle de alcoolemia"
     },
     {
       "type": "heading",
@@ -171,6 +171,11 @@
     {
       "type": "paragraph",
       "content": "Na prática, isso quer dizer: teste só quem está em função de risco; informe a finalidade antes; restrinja o acesso ao resultado (idealmente ao médico do trabalho); e faça o gestor receber apenas o \"apto\" ou \"inapto\", não o dado clínico. É aqui que um registro organizado, com sigilo e trilha de auditoria, deixa de ser luxo e vira proteção — tema que uma [plataforma de gestão com sigilo e registro](https://www.healthsafety.com.br/) ajuda a resolver."
+    },
+    {
+      "type": "image",
+      "src": "/images/step-alertas.jpg",
+      "alt": "Alerta de resultado de teste enviado com sigilo"
     },
     {
       "type": "quote",
