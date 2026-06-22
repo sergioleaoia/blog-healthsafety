@@ -1,6 +1,6 @@
 import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoColor from "@/assets/health-safety-logo-color.png";
+import logoWhite from "@/assets/health-safety-logo-white.png";
 
 const BlogFooter = () => {
   return (
@@ -9,10 +9,9 @@ const BlogFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
           <div className="flex flex-col gap-4">
             <img
-              src={logoColor}
+              src={logoWhite}
               alt="Health & Safety"
-              className="h-10 w-auto object-contain self-start"
-              style={{ filter: "brightness(0) invert(1)" }}
+              className="h-16 w-auto object-contain self-start"
             />
             <p className="text-background/40 text-xs leading-relaxed">
               Rua Viscondessa do Livramento, 54
@@ -38,14 +37,6 @@ const BlogFooter = () => {
               className="text-background/60 hover:text-background transition-colors"
             >
               Conhecer o Phoebus
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5581981771177"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-background/60 hover:text-background transition-colors"
-            >
-              Falar no WhatsApp
             </a>
           </div>
 
