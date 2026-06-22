@@ -8,18 +8,13 @@ import {
   Wine,
   HardHat,
   ScrollText,
-  ArrowUpRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BlogHeader from "@/components/BlogHeader";
 import BlogFooter from "@/components/BlogFooter";
 import { posts, ALL_TOPICS, type PostTopic } from "@/lib/posts";
 
-// TODO: substituir pelo webhook real (Make/n8n) quando o endpoint da newsletter estiver pronto.
-const WEBHOOK_URL = "";
-
-const WHATSAPP_URL =
-  "https://api.whatsapp.com/send?phone=5581981771177&text=Ol%C3%A1%2C%20vim%20do%20blog%20Health%20Safety%20e%20quero%20conhecer%20o%20Phoebus";
+const WEBHOOK_URL = "https://hook.us1.make.com/a88frd5l7s23atfmquhv7n8afag2obnc";
 
 const TOPIC_ICONS: Record<PostTopic, typeof Wine> = {
   "Álcool no Trabalho": Wine,
@@ -65,23 +60,11 @@ function ThankYouModal({ open, onClose }: { open: boolean; onClose: () => void }
         </div>
 
         <h3 className="font-heading text-2xl font-extrabold text-foreground mb-2 uppercase tracking-tight">
-          Cadastro confirmado
+          Obrigado por se cadastrar!
         </h3>
-        <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-          Toda semana você recebe conteúdo prático sobre bafômetro, alcoolemia e segurança
-          operacional — direto no seu email.
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Recebemos seu email. Em breve, nossos conteúdos sobre segurança no trabalho chegam até você.
         </p>
-
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 font-heading font-bold transition-colors"
-        >
-          <MessageCircle size={16} />
-          Quer conhecer o Phoebus? Falar no WhatsApp
-          <ArrowUpRight size={14} />
-        </a>
       </motion.div>
     </div>
   );
