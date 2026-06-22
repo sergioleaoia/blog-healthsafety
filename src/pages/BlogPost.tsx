@@ -23,7 +23,11 @@ const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send?phone=5581981771177&text=Ol%C3%A1%2C%20vim%20do%20blog%20Health%20Safety%20e%20quero%20conhecer%20o%20Phoebus";
 
-const URL_REGEX = /(?:https?:\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+(?:\/[^\s]*)?/gi;
+const URL_REGEX = /(?:https?:\/\/|www\.)[^\s)]+/gi;
+const MD_LINK_REGEX = /\[([^\]]+)\]\(([^)]+)\)/g;
+const BOLD_REGEX = /\*\*([^*]+)\*\*/g;
+const LINK_CLASS =
+  "text-accent underline decoration-accent/50 underline-offset-2 hover:text-accent/80 transition-colors break-words";
 
 const TOPIC_ICONS: Record<PostTopic, typeof Wine> = {
   "Álcool no Trabalho": Wine,
@@ -31,35 +35,33 @@ const TOPIC_ICONS: Record<PostTopic, typeof Wine> = {
   "NRs e Conformidade": ScrollText,
 };
 
-function renderTextWithLinks(text: string) {
+/* Inline: raw URLs (https:// or www.) → links */
+function renderUrls(text: string, keyPrefix: string): Array<string | JSX.Element> {
   const nodes: Array<string | JSX.Element> = [];
   let lastIndex = 0;
+  URL_REGEX.lastIndex = 0;
 
   for (const match of text.matchAll(URL_REGEX)) {
     const rawUrl = match[0];
     const start = match.index ?? 0;
 
-    if (start > lastIndex) {
-      nodes.push(text.slice(lastIndex, start));
-    }
+    if (start > lastIndex) nodes.push(text.slice(lastIndex, start));
 
     let cleanUrl = rawUrl;
     let trailing = "";
-
     while (/[.,;:!?)]$/.test(cleanUrl)) {
       trailing = cleanUrl.slice(-1) + trailing;
       cleanUrl = cleanUrl.slice(0, -1);
     }
-
     const href = /^https?:\/\//i.test(cleanUrl) ? cleanUrl : `https://${cleanUrl}`;
 
     nodes.push(
       <a
-        key={`${start}-${cleanUrl}`}
+        key={`${keyPrefix}-u${start}`}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-accent underline decoration-accent/50 underline-offset-2 hover:text-accent/80 transition-colors"
+        className={LINK_CLASS}
       >
         {cleanUrl}
       </a>
@@ -70,6 +72,56 @@ function renderTextWithLinks(text: string) {
   }
 
   if (lastIndex < text.length) nodes.push(text.slice(lastIndex));
+  return nodes;
+}
+
+/* Inline: **bold** (raw URLs handled inside the non-bold runs) */
+function renderBold(text: string, keyPrefix: string): Array<string | JSX.Element> {
+  const nodes: Array<string | JSX.Element> = [];
+  let lastIndex = 0;
+  BOLD_REGEX.lastIndex = 0;
+
+  for (const match of text.matchAll(BOLD_REGEX)) {
+    const start = match.index ?? 0;
+    if (start > lastIndex)
+      nodes.push(...renderUrls(text.slice(lastIndex, start), `${keyPrefix}-${start}`));
+    nodes.push(
+      <strong key={`${keyPrefix}-b${start}`} className="font-semibold text-foreground">
+        {match[1]}
+      </strong>
+    );
+    lastIndex = start + match[0].length;
+  }
+
+  if (lastIndex < text.length)
+    nodes.push(...renderUrls(text.slice(lastIndex), `${keyPrefix}-end`));
+  return nodes;
+}
+
+/* Inline markdown: [text](url) links, then **bold**, then raw URLs */
+function renderTextWithLinks(text: string) {
+  const nodes: Array<string | JSX.Element> = [];
+  let lastIndex = 0;
+  MD_LINK_REGEX.lastIndex = 0;
+
+  for (const match of text.matchAll(MD_LINK_REGEX)) {
+    const start = match.index ?? 0;
+    if (start > lastIndex) nodes.push(...renderBold(text.slice(lastIndex, start), `t${start}`));
+    nodes.push(
+      <a
+        key={`l${start}`}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={LINK_CLASS}
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = start + match[0].length;
+  }
+
+  if (lastIndex < text.length) nodes.push(...renderBold(text.slice(lastIndex), "tend"));
   return nodes.length > 0 ? nodes : text;
 }
 
@@ -476,7 +528,7 @@ export default function BlogPost() {
                         <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-accent/10 text-accent text-sm font-heading font-extrabold flex items-center justify-center mt-0.5">
                           {j + 1}
                         </span>
-                        <span>{item}</span>
+                        <span>{renderTextWithLinks(item)}</span>
                       </li>
                     ))}
                   </motion.ol>

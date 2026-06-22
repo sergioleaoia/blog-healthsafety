@@ -1,0 +1,282 @@
+{
+  "slug": "teste-bafometro-trabalho-legal",
+  "number": "#01",
+  "date": "Jun 22, 2026",
+  "dateISO": "2026-06-22",
+  "readTime": "10 min",
+  "topic": "Álcool no Trabalho",
+  "title": "Teste de bafômetro no trabalho é legal? O que a empresa pode (e não pode) exigir",
+  "subtitle": "O álcool custa R$ 18,8 bi/ano ao Brasil. Veja o que o TST já decidiu sobre o teste de bafômetro no trabalho, quando ele é legal e como testar sem virar processo.",
+  "metaTitle": "Teste de bafômetro no trabalho é legal? O que a empresa pode (e não pode) exigir",
+  "metaDescription": "O álcool custa R$ 18,8 bi/ano ao Brasil. Veja o que o TST já decidiu sobre o teste de bafômetro no trabalho, quando ele é legal e como testar sem virar processo.",
+  "keywords": [
+    "teste de bafômetro no trabalho",
+    "teste de álcool na empresa",
+    "segurança do trabalho",
+    "LGPD",
+    "justa causa"
+  ],
+  "image": null,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Em 2019, o consumo de álcool custou **R$ 18,8 bilhões** ao Brasil, e 94% disso foram custos indiretos ligados ao trabalho — produtividade perdida, licenças, afastamentos ([Fiocruz](https://fiocruz.br/noticia/2024/11/estudo-da-fiocruz-consumo-de-alcool-custa-r-18-bi-por-ano-ao-pais-e-causa-12-mortes), estudo de 2024). Diante de um número desses, a pergunta que trava quem cuida da segurança é direta: posso testar o álcool do meu pessoal sem tomar um processo?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A resposta curta é \"sim, mas com regras\". A longa é este guia. Você vai ver o que a lei exige, o que a Justiça já decidiu (os dois lados) e a régua prática que sustenta o teste no dia a dia."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Resumo rápido"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Testar álcool no trabalho **não é proibido nem livre — é condicionado**.",
+        "O TST já decidiu que o teste **aleatório**, com fim de segurança, não gera dano moral — mas manteve R$ 10 mil de indenização quando o teste foi **público e vexatório**.",
+        "O que sustenta a prática: política escrita e divulgada, sorteio impessoal, sigilo do resultado, contraprova, proporcionalidade e foco em **funções de risco**.",
+        "O resultado do teste é **dado sensível de saúde** (LGPD) — exige cuidado com base legal e acesso."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/images/phoebus-hero.jpg",
+      "alt": "Trabalhadora de capacete e colete de segurança faz o teste de etilômetro no Phoebus, instalado na catraca de acesso da operação."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Afinal, a empresa pode testar álcool dos funcionários?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Pode — desde que respeite limites. O teste de alcoolemia faz parte do poder de organização do empregador, mas esbarra na intimidade e na dignidade do trabalhador (art. 5º da Constituição). Por isso ninguém pode dizer que é \"liberado geral\" nem que é \"proibido\". O certo é: a prática é lícita quando bem conduzida, e vira problema quando é abusiva."
+    },
+    {
+      "type": "paragraph",
+      "content": "No Brasil, 4,9% das pessoas — cerca de 4,6 milhões — já perderam o emprego por causa do álcool ([CISA](https://cisa.org.br/pesquisa/artigos-cientificos/artigo/item/86-alcool-e-trabalho), com base no II LENAD/UNIFESP, 2012). Não é um detalhe de RH: é um risco operacional, principalmente em funções perigosas. E é esse risco que dá legitimidade ao teste."
+    },
+    {
+      "type": "paragraph",
+      "content": "A diferença entre testar e tomar um processo não está em \"ter ou não bafômetro\". Está em **como** o teste é feito. Guarde essa ideia, porque o resto do guia gira em torno dela."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "A lei obriga o teste? (motorista é um caso à parte)"
+    },
+    {
+      "type": "paragraph",
+      "content": "A obrigação legal direta existe para **um grupo específico**: o motorista profissional. A Lei 13.103/2015 incluiu na CLT o dever de o motorista empregado fazer **exame toxicológico** (janela mínima de 90 dias) e aderir ao programa de controle de álcool e drogas do empregador (art. 235-B, inciso VII). Para as demais funções, **não há lei que obrigue** o teste — e também não há lei que o proíba."
+    },
+    {
+      "type": "paragraph",
+      "content": "Aqui mora uma confusão que derruba muita gente: **exame toxicológico não é a mesma coisa que bafômetro**. O toxicológico olha para trás (detecta uso de drogas nos últimos meses, pelo cabelo). O bafômetro, ou etilômetro, mede o álcool **no momento** — é o que flagra alguém embriagado durante a jornada. Um não substitui o outro."
+    },
+    {
+      "type": "paragraph",
+      "content": "Então, se a lei só obriga o motorista, como justificar o teste nas outras funções? Pela **segurança**. Quando a atividade envolve risco — altura, máquinas, condução, eletricidade —, o teste se ancora no dever do empregador de manter o ambiente seguro, não numa exigência legal específica."
+    },
+    {
+      "type": "quote",
+      "content": "**Capsule:** A Lei 13.103/2015 obriga o exame toxicológico do motorista profissional (CLT, art. 235-B, VII), com janela mínima de 90 dias. Esse exame é diferente do bafômetro: o toxicológico detecta uso passado de drogas; o bafômetro mede o álcool no momento. Para as demais funções, o teste se justifica pela segurança da atividade, não por lei própria."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "O que a Justiça já decidiu (e por que tem os dois lados)"
+    },
+    {
+      "type": "paragraph",
+      "content": "A Justiça do Trabalho já validou o bafômetro como medida de segurança — com condições. Em 2019, a 2ª Turma do TST negou dano moral a um trabalhador testado por etilômetro, porque a escolha foi **aleatória e impessoal** e o objetivo era zelar pela saúde e pela segurança ([TST, 2ª Turma, RR-11276-14.2015.5.03.0060](https://www.tst.jus.br/-/aplicacao-de-teste-do-bafometro-de-forma-aleatoria-nao-caracteriza-dano-moral), 2019). Há precedente parecido de 2017, num programa de segurança com testes sorteados."
+    },
+    {
+      "type": "paragraph",
+      "content": "Mas o mesmo tribunal pune o abuso. Em 2022, o TST **manteve R$ 10 mil de indenização** a um trabalhador submetido a teste diário, feito na frente dos colegas e sob ameaça de ridicularização ([TST, 2ª Turma, Proc. 20383-89.2017.5.04.0123](https://www.migalhas.com.br/quentes/357349), 2022). Mesmo bafômetro, resultado oposto. A diferença foi o método."
+    },
+    {
+      "type": "image",
+      "src": "/images/risco-acidente-alcoolemia.svg",
+      "alt": "Risco de acidente fatal por nível de alcoolemia, segundo a OIT: 2,5 vezes a 0,5 g/L, 4,5 vezes a 0,8 g/L e 16 vezes a 1,5 g/L."
+    },
+    {
+      "type": "paragraph",
+      "content": "Vale um aviso de honestidade: essas são decisões de Turma, **não súmulas**. Não criam regra automática para toda empresa. Servem de bússola — mostram o que a Justiça aceita e o que ela rejeita."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "A régua: 6 requisitos para o teste ser legal"
+    },
+    {
+      "type": "paragraph",
+      "content": "Se há um lado que liberou e um lado que condenou, o que separa os dois? Dá para extrair dos julgados uma régua prática. Quando esses seis pontos estão presentes, o teste se sustenta:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Política escrita e divulgada.** Regulamento interno claro, com ciência dos empregados antes de qualquer teste. Sem regra prévia, o teste fica frágil.",
+        "**Sorteio aleatório e impessoal.** Nada de escolher uma pessoa específica. A seleção tem que ser por critério neutro e auditável.",
+        "**Sala reservada e sigilo.** Testar na frente dos colegas foi exatamente o que gerou condenação. O resultado é confidencial.",
+        "**Direito a contraprova.** Quem testou positivo pode pedir nova medição.",
+        "**Proporcionalidade.** Um único teste positivo não vira demissão direta. Há gradação — orientação, advertência, encaminhamento.",
+        "**Foco em função de risco.** Quanto maior o risco da atividade, mais legítimo o teste. Testar \"todo mundo, por testar\" enfraquece a justificativa."
+      ]
+    },
+    {
+      "type": "quote",
+      "content": "**O que vejo na prática:** as empresas que não tomam processo não são as que têm o melhor aparelho — são as que têm o melhor **procedimento**. Quase todo conflito que chega nasce de um desses seis pontos furados, não do bafômetro em si. — Nicholson Pimentel, fundador da Health & Safety."
+    },
+    {
+      "type": "image",
+      "src": "/images/step-registro.jpg",
+      "alt": "Painel de registros da plataforma Health Safety: histórico auditável de cada teste, com aprovados e reprovados ao longo do tempo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Recusa e resultado positivo: pode dar justa causa?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A base legal existe, mas a justa causa não é automática. A CLT prevê a embriaguez como motivo de dispensa por justa causa no art. 482, alínea \"f\": **\"embriaguez habitual ou em serviço\"** ([CLT, art. 482](https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm)). Só que a aplicação prática é mais sutil do que a letra da lei sugere."
+    },
+    {
+      "type": "paragraph",
+      "content": "A Justiça costuma tratar a **embriaguez habitual** (o alcoolismo crônico) como **doença**, reconhecida pela classificação internacional. Nesses casos, a recomendação é afastamento e tratamento, não demissão — e a justa causa aplicada aí tende a ser revertida. Já a **embriaguez em serviço** (a pessoa chega ou fica embriagada na jornada) é mais defensável, principalmente em função de risco, desde que haja prova e política."
+    },
+    {
+      "type": "paragraph",
+      "content": "E a recusa? A empresa não pode obrigar fisicamente ninguém a soprar. O que ela pode é prever, no regulamento, como a recusa é tratada — sem transformar isso em punição arbitrária ou constrangimento."
+    },
+    {
+      "type": "quote",
+      "content": "**Capsule:** A CLT permite justa causa por \"embriaguez habitual ou em serviço\" (art. 482, \"f\"), mas a aplicação não é automática. A Justiça trata a embriaguez habitual como doença, recomendando tratamento em vez de demissão; a embriaguez em serviço é mais defensável, com prova e política interna. A recusa ao teste não pode virar coação física."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "E a LGPD? O resultado do teste é dado sensível"
+    },
+    {
+      "type": "paragraph",
+      "content": "Atenção a este ponto, porque ele pega muita gente desprevenida. O resultado de um teste de álcool é um **dado pessoal sensível** — dado de saúde —, segundo a LGPD (art. 5º, II). Isso significa que o tratamento desse dado só é permitido em hipóteses específicas (art. 11), e não basta \"porque a empresa quer\"."
+    },
+    {
+      "type": "paragraph",
+      "content": "No vínculo de emprego, a base legal mais adequada **não é o consentimento**. A relação entre empregado e empregador é desigual, o que enfraquece um \"sim\" livre. As bases que se encaixam são a proteção da vida e da incolumidade física (sua e de terceiros) e a tutela da saúde — esta, quando o procedimento passa por profissional de saúde. Já houve, inclusive, justa causa revertida na Justiça do Trabalho com base na LGPD, justamente por testes feitos de forma indistinta."
+    },
+    {
+      "type": "paragraph",
+      "content": "Na prática, isso quer dizer: teste só quem está em função de risco; informe a finalidade antes; restrinja o acesso ao resultado (idealmente ao médico do trabalho); e faça o gestor receber apenas o \"apto\" ou \"inapto\", não o dado clínico. É aqui que um registro organizado, com sigilo e trilha de auditoria, deixa de ser luxo e vira proteção — tema que uma [plataforma de gestão com sigilo e registro](https://www.healthsafety.com.br/) ajuda a resolver."
+    },
+    {
+      "type": "quote",
+      "content": "**Capsule:** Pela LGPD (art. 5º, II e art. 11), o resultado de teste de álcool é dado sensível de saúde. No emprego, a base legal não é o consentimento, e sim a proteção da vida e a tutela da saúde. O cuidado prático: testar só funções de risco, informar a finalidade, restringir o acesso ao resultado e entregar ao gestor apenas \"apto\" ou \"inapto\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Onde isso encaixa na sua segurança do trabalho (e por que a Portaria 116 não serve aqui)"
+    },
+    {
+      "type": "paragraph",
+      "content": "A âncora certa para o controle de álcool dentro da empresa é o seu próprio sistema de segurança e saúde: o PCMSO (NR-7), o gerenciamento de riscos (NR-1) e a política interna, somados à jurisprudência. É esse conjunto que dá base ao programa — não uma norma avulsa."
+    },
+    {
+      "type": "paragraph",
+      "content": "Uma confusão comum é tentar pendurar tudo na Portaria 116/2015. Não funciona. O próprio Ministério do Trabalho diz que o exame toxicológico dessa portaria fica **fora do PCMSO** e tem foco em **segurança no trânsito**, voltado ao motorista. Ou seja: para o controle de álcool no ambiente interno, a Portaria 116 é o endereço errado."
+    },
+    {
+      "type": "paragraph",
+      "content": "Vale separar os papéis: o médico do trabalho cuida da saúde ocupacional e do sigilo do resultado; o técnico ou engenheiro de segurança estrutura o procedimento e amarra os gatilhos por risco — como trabalho em altura (NR-35) ou espaço confinado (NR-33). É essa costura entre lei, norma e procedimento que falta na maioria dos materiais por aí."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Perguntas frequentes"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Sou obrigado a fazer o teste do bafômetro na empresa?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A empresa não pode obrigar você fisicamente a soprar. Ela pode, porém, ter um regulamento interno que preveja o teste e como a recusa é tratada. Em funções de risco e com política clara e divulgada, o teste tende a ser considerado legítimo pela Justiça do Trabalho."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "A empresa pode demitir por justa causa por embriaguez?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Pode, com base no art. 482, \"f\", da CLT, mas não de forma automática. A embriaguez habitual costuma ser tratada como doença, com afastamento e tratamento. A embriaguez em serviço, com prova e política, é mais defensável — especialmente em atividades perigosas."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "O teste pode ser feito na frente dos colegas?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Não. Testar publicamente é justamente o que gera condenação. Em 2022, o TST manteve R$ 10 mil de indenização por teste feito diante dos colegas e sob ameaça de ridicularização ([TST, 2022](https://www.migalhas.com.br/quentes/357349)). O resultado deve ser sigiloso e o teste, em local reservado."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": "Preciso do consentimento por escrito do funcionário (LGPD)?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A base legal do teste no emprego em geral não é o consentimento, e sim a proteção da vida e a tutela da saúde (LGPD, art. 11). O essencial é informar a finalidade antes, testar só funções de risco e restringir o acesso ao resultado."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Conclusão"
+    },
+    {
+      "type": "paragraph",
+      "content": "O teste de álcool no trabalho não é uma questão de \"pode ou não pode\". É uma questão de **como**. Em resumo:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A prática é **condicionada** — nem livre, nem proibida.",
+        "A diferença entre testar e tomar processo está na **régua de 6 requisitos**.",
+        "O resultado é **dado sensível**: trate-o como tal.",
+        "A base é a sua **segurança do trabalho** (NR-7, NR-1, política interna), não a Portaria 116."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Este conteúdo é informativo e não substitui a orientação do seu jurídico. Se você quer estruturar o controle de álcool com política, sorteio impessoal, sigilo e registro auditável, [fale com a equipe da Health & Safety](https://www.healthsafety.com.br/) — a gente ajuda a montar o programa do jeito que a Justiça aceita."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": "Fontes (consultadas em 22/06/2026)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Fiocruz — Consumo de álcool custa R$ 18,8 bi por ano ao país. https://fiocruz.br/noticia/2024/11/estudo-da-fiocruz-consumo-de-alcool-custa-r-18-bi-por-ano-ao-pais-e-causa-12-mortes",
+        "CISA / II LENAD (UNIFESP-INPAD) — Álcool e trabalho. https://cisa.org.br/pesquisa/artigos-cientificos/artigo/item/86-alcool-e-trabalho",
+        "OIT/ILO — Alcohol and drugs at work. https://www.ilo.org/resource/statement/alcohol-and-drugs-work-interface-between-safety-and-health-and-health",
+        "TST, 2ª Turma — RR-11276-14.2015.5.03.0060 (teste aleatório não gera dano moral, 2019). https://www.tst.jus.br/-/aplicacao-de-teste-do-bafometro-de-forma-aleatoria-nao-caracteriza-dano-moral",
+        "TST, 2ª Turma — Proc. 20383-89.2017.5.04.0123 (mantida indenização por teste vexatório, 2022). https://www.migalhas.com.br/quentes/357349",
+        "CLT — Decreto-Lei 5.452/1943, art. 482 e art. 235-B. https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+        "Lei 13.103/2015 (Lei dos Motoristas). https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13103.htm",
+        "LGPD — Lei 13.709/2018, art. 5º e art. 11. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+        "Ministério do Trabalho — Exames Toxicológicos: Perguntas e Respostas (Portaria MTPS 116/2015). https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2015/Exames_Toxicologicos_Perguntas_Respostas_Portaria_MTPS_116_2015.pdf"
+      ]
+    }
+  ]
+}

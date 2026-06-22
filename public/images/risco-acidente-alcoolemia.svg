@@ -1,0 +1,15 @@
+<svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" role="img" aria-label="Risco de acidente fatal por nível de alcoolemia, segundo a OIT: 2,5 vezes a 0,5 g/L, 4,5 vezes a 0,8 g/L e 16 vezes a 1,5 g/L">
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#1f2937">Quanto mais álcool, maior o risco de acidente fatal</text>
+  <text x="20" y="48" font-size="12" fill="#6b7280">Aumento do risco em relação a quem está sóbrio</text>
+  <g font-size="12" fill="#374151">
+    <rect x="120" y="80" width="40" height="26" rx="3" fill="#9ca3af"/>
+    <text x="20" y="98">Sóbrio</text><text x="168" y="98" font-weight="700">1x</text>
+    <rect x="120" y="120" width="60" height="26" rx="3" fill="#60a5fa"/>
+    <text x="20" y="138">0,5 g/L</text><text x="188" y="138" font-weight="700">2,5x</text>
+    <rect x="120" y="160" width="100" height="26" rx="3" fill="#3b82f6"/>
+    <text x="20" y="178">0,8 g/L</text><text x="228" y="178" font-weight="700">4,5x</text>
+    <rect x="120" y="200" width="340" height="26" rx="3" fill="#1d4ed8"/>
+    <text x="20" y="218">1,5 g/L</text><text x="468" y="218" font-weight="700">16x</text>
+  </g>
+  <text x="20" y="270" font-size="11" fill="#6b7280">Fonte: Organização Internacional do Trabalho (OIT/ILO).</text>
+</svg>
