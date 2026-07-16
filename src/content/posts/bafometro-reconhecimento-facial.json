@@ -16,7 +16,7 @@
     "biometria facial",
     "automação de alcoolemia"
   ],
-  "image": null,
+  "image": "/images/phoebus-hero.jpg",
   "content": [
     {
       "type": "paragraph",
@@ -33,6 +33,11 @@
     {
       "type": "paragraph",
       "content": "O Phoebus, a solução de automação mais avançada da Health & Safety, eleva esse padrão ao máximo. Com sua tecnologia de reconhecimento facial, é impossível falsificar um resultado. Cada teste gera um log completo com foto, data, hora e nível alcoólico, armazenado em nuvem segura. Se houver qualquer tentativa de fraude, o sistema não apenas bloqueia o acesso, mas registra a infração com provas visuais incontestáveis."
+    },
+    {
+      "type": "image",
+      "src": "/images/step-assopra.jpg",
+      "alt": "Tela do bafômetro Phoebus com reconhecimento facial durante o teste de alcoolemia"
     },
     {
       "type": "quote",
