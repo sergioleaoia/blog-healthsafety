@@ -14,9 +14,9 @@ const BlogFooter = () => {
               className="h-16 w-auto object-contain self-start"
             />
             <p className="text-background/40 text-xs leading-relaxed">
-              Rua Viscondessa do Livramento, 54
+              CNPJ 08.857.492/0001-48
               <br />
-              Recife — PE
+              Tel. 4007-1507
             </p>
           </div>
 
