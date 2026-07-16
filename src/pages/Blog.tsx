@@ -5,7 +5,7 @@ import {
   X,
   CheckCircle,
   MessageCircle,
-  Wine,
+  ShieldCheck,
   HardHat,
   ScrollText,
 } from "lucide-react";
@@ -16,8 +16,8 @@ import { posts, ALL_TOPICS, type PostTopic } from "@/lib/posts";
 
 const WEBHOOK_URL = "https://hook.us1.make.com/a88frd5l7s23atfmquhv7n8afag2obnc";
 
-const TOPIC_ICONS: Record<PostTopic, typeof Wine> = {
-  "Álcool no Trabalho": Wine,
+const TOPIC_ICONS: Record<PostTopic, typeof ShieldCheck> = {
+  "Álcool no Trabalho": ShieldCheck,
   "Segurança Operacional": HardHat,
   "NRs e Conformidade": ScrollText,
 };
@@ -72,7 +72,7 @@ function ThankYouModal({ open, onClose }: { open: boolean; onClose: () => void }
 
 /* ── Card Cover (no-photo posts) ── */
 function PostCover({ post }: { post: (typeof posts)[number] }) {
-  const Icon = TOPIC_ICONS[post.topic] ?? Wine;
+  const Icon = TOPIC_ICONS[post.topic] ?? ShieldCheck;
 
   return (
     <div className="relative aspect-[16/10] overflow-hidden bg-brand-dark">

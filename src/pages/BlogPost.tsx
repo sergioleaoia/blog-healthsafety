@@ -8,7 +8,7 @@ import {
   Share2,
   Linkedin,
   ChevronUp,
-  Wine,
+  ShieldCheck,
   HardHat,
   ScrollText,
   MessageCircle,
@@ -29,8 +29,8 @@ const BOLD_REGEX = /\*\*([^*]+)\*\*/g;
 const LINK_CLASS =
   "text-accent underline decoration-accent/50 underline-offset-2 hover:text-accent/80 transition-colors break-words";
 
-const TOPIC_ICONS: Record<PostTopic, typeof Wine> = {
-  "Álcool no Trabalho": Wine,
+const TOPIC_ICONS: Record<PostTopic, typeof ShieldCheck> = {
+  "Álcool no Trabalho": ShieldCheck,
   "Segurança Operacional": HardHat,
   "NRs e Conformidade": ScrollText,
 };
@@ -345,7 +345,7 @@ export default function BlogPost() {
   const currentIndex = posts.findIndex((p) => p.slug === post.slug);
   const prevPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-  const TopicIcon = TOPIC_ICONS[post.topic] ?? Wine;
+  const TopicIcon = TOPIC_ICONS[post.topic] ?? ShieldCheck;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
