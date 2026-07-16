@@ -16,7 +16,7 @@ const BlogFooter = () => {
             <p className="text-background/40 text-xs leading-relaxed">
               CNPJ 08.857.492/0001-48
               <br />
-              Tel. 4007-1507
+              Tel. (81) 4007-1507
             </p>
           </div>
 
